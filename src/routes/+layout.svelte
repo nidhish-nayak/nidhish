@@ -1,6 +1,5 @@
 <script>
 	import Loading from '$lib/Loading.svelte';
-	import Logo from '$lib/Logo.svelte';
 	import { onMount } from 'svelte';
 	import '../app.scss';
 
@@ -18,8 +17,8 @@
 
 {#if !showComponent}
 	<nav>
-		<div>
-			<Logo />
+		<div class="logo">
+			<img src="/Logo.svg" alt="my-logo" />
 		</div>
 		<ul>
 			<li><a href="/">Home</a></li>
@@ -31,6 +30,10 @@
 {/if}
 
 <style lang="scss">
+	.logo {
+		margin: 1em;
+	}
+
 	nav {
 		display: flex;
 		justify-content: space-between;
