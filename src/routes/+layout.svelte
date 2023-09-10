@@ -18,7 +18,9 @@
 {#if !showComponent}
 	<nav>
 		<div class="logo">
-			<img src="/Logo.svg" alt="my-logo" />
+			<a href="/">
+				<img src="/Logo.png" alt="my-logo" />
+			</a>
 		</div>
 		<ul>
 			<li><a href="/">Home</a></li>
@@ -32,6 +34,11 @@
 <style lang="scss">
 	.logo {
 		margin: 1em;
+		cursor: pointer;
+
+		img {
+			max-width: 125px;
+		}
 	}
 
 	nav {
@@ -46,16 +53,16 @@
 
 	li {
 		list-style: none;
-	}
 
-	a {
-		font-family: sans-serif;
-		text-decoration: none;
-		color: black;
-		padding: 1.5em;
-	}
+		a {
+			font-family: sans-serif;
+			text-decoration: none;
+			color: black;
+			padding: 1.5em;
+		}
 
-	a:hover {
-		background-color: lightblue;
+		a:hover {
+			background-color: lightblue;
+		}
 	}
 </style>
