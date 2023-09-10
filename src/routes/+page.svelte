@@ -1,11 +1,12 @@
 <script>
 </script>
 
-<!-- <Loading /> -->
-<h1 class="title">My content</h1>
+<main>
+	<h1 class="title">My content</h1>
+</main>
 
 <style>
 	.title {
-		font-size: 5rem;
+		font-size: 10rem;
 	}
 </style>
